@@ -14,23 +14,37 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-chocolate">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#Accueil" style="margin-top: 20px;">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Notre-Histoire" style="margin-top: 20px;">Notre Histoire</a></li>
-                    <li class="nav-item" id="logoNavItem"><a class="nav-link" href="#Accueil"><img src="Image/Logo.png" alt="" style="height: 100px;"></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Produits" style="margin-top: 20px;">Produits</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Contact" style="margin-top: 20px;">Contact</a></li>
-                </ul>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Accueil" id="logoNavItem"><img src="Image/Logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="Image/Logo.png" style="height: 50px;"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#Notre-Histoire">Notre Histoire</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Produits">Nos Produits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Style-Photographie">Style Photographie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
+
 
     <header class="bg-chocolate text-center py-5">
 
@@ -38,7 +52,7 @@
 
     <section id="Accueil">
         <div class="overlay"></div>
-        <h1 class="display-4">Découvrez la Douceur de <img src="Image/Logo-Blanc.png" alt="" style="height: 150px;"></h1>
+        <h1 class="display-4">Découvrez la Douceur de <img src="Image/Logo-Blanc.png" id="Accueillogo"></h1>
         <a href="PDF/Delcioza Charte Graphique.pdf" target="_blank" class="btn btn-chocolate">Charte Graphique</a>
     </section>
 
@@ -54,9 +68,6 @@
                 La douceur italienne, l'excellence du chocolat notre nom démontre notre attachement à la qualité suisse du chocolat au lait en adoptant l'italien, la langue officielle suisse. Chaque carré de Delcioza est une célébration de cette fusion culturelle et d'une harmonie de goûts qui vous ravira. <br>
                 <br>
                 Avec Delcioza, découvrez la olcezza. Entraînez-vous dans un monde où le plaisir est transformé en une expérience. Delcioza vous invite à savourer la vie et à savourer chaque instant avec une tablette de chocolat au lait qui révèle toute la magie du chocolat suisse.</p>
-            <div class="text-center">
-                <img src="chocolat-photographie.jpg" alt="Photographie du Chocolat Delcioza" class="img-fluid">
-            </div>
         </div>
     </section>
 
@@ -107,7 +118,7 @@
         </div>
     </section>
 
-    <section class="bg-light py-5">
+    <section class="bg-light py-5" id="Style-Photographie">
         <div class="container">
             <h2 class="display-4 text-center mb-4">Capturez les Moments Sucrés avec Delcioza</h2>
             <p class="lead text-center">Delcioza offre un voyage créatif unique, capturant les moments délicieux, relaxants et dynamiques de la vie quotidienne. C'est le partenaire parfait pour préserver les souvenirs et les événements.</p>

@@ -1,5 +1,5 @@
 body {
-    padding-top: 56px;
+    padding-top: auto;
     background-color: #6C431F;
 }
 
@@ -12,11 +12,23 @@ body {
     content: url('Image/Logo-Appuie.png'); /* Remplacez 'NouveauLogo.png' par le chemin de votre nouvelle image */
 }
 
+#logoNavItem img {
+    height: 80px;
+    margin-left: 50px;
+}
+
+/* Couleur des contours */
+.navbar-toggler {
+    border-color: #6C431F;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+
 .nav-item {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    margin: 5px 50px 5px 50px; /* Réduisez la marge selon vos besoins */
 }
 
 .navbar-nav .nav-item a.nav-link {
@@ -27,17 +39,6 @@ body {
 .navbar-nav .nav-item:hover a.nav-link {
     color: #CDA577;
 }
-
-@media (max-width: 1200px) {
-    .nav-item {
-        margin: 5px 15px;
-    }
-
-    #Accueil {
-    height: auto;
-}
-}
-
 
 .bg-chocolate {
     background-color: #ffff;
@@ -72,6 +73,10 @@ body {
     color: #ffff;
 }
 
+#Accueillogo {
+    height: 150px;
+}
+
 #Accueil a {
     position: relative;
     z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
@@ -87,7 +92,6 @@ body {
     margin-bottom: 100px;
     font-size: 50px;
 }
-
 
 .bg-strawberry {
     background-color: #CF3E25;
@@ -127,4 +131,140 @@ body {
 
 .white-text {
     color: #fff; /* Couleur blanche */
+}
+
+@media (min-width: 100px) {
+    #logoNavItem img {
+        height: 80px;
+        margin-left: 0px;
+    }
+    #Accueil {
+        position: relative;
+        height: 600px;
+        background: url('Image/BG-Accueil.jpg') center no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding: 20px; /* Ajoutez un espacement au besoin */
+    }
+    #Accueillogo {
+        height: 100px;
+        margin-top: 25px;
+    }
+    #Accueil h1 {
+        position: relative;
+        z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+        height: 150px;
+        margin-top: 200px;
+        max-width: 100%;
+        font-size: 30px;
+        color: #ffff;
+    }
+    #Accueil a {
+        position: relative;
+        z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+        color: white;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 420px) {
+    #logoNavItem img {
+        height: 80px;
+        margin-left: 0px;
+    }
+    #Accueil {
+        position: relative;
+        height: 600px;
+        background: url('Image/BG-Accueil.jpg') center no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding: 20px; /* Ajoutez un espacement au besoin */
+    }
+    #Accueillogo {
+        height: 100px;
+        margin-top: 25px;
+    }
+    #Accueil h1 {
+        position: relative;
+        z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+        height: 150px;
+        margin-top: 200px;
+        max-width: 100%;
+        font-size: 30px;
+        color: #ffff;
+    }
+    #Accueil a {
+        position: relative;
+        z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+        color: white;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    #logoNavItem img {
+        height: 80px;
+        margin-left: 50px;
+    }
+    #Accueil {
+        position: relative;
+        height: 600px;
+        background: url('Image/BG-Accueil.jpg') center no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding: 20px; /* Ajoutez un espacement au besoin */
+    }
+    #Accueillogo {
+        height: 125px;
+    }
+    #Accueil h1 {
+        position: relative;
+        z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+        height: 150px;
+        margin-top: 200px;
+        max-width: 100%;
+        color: #ffff;
+    }
+    #Accueil a {
+        position: relative;
+        z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+        color: white;
+    }
+}
+@media (min-width: 1080px) {
+    #logoNavItem img {
+        height: 80px;
+        margin-left: 50px;
+    }
+    #Accueil {
+        position: relative;
+        height: 600px;
+        background: url('Image/BG-Accueil.jpg') center no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding: 20px; /* Ajoutez un espacement au besoin */
+    }
+    #Accueillogo {
+        height: 150px;
+    }
+    #Accueil h1 {
+        position: relative;
+        z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+        height: 150px;
+        margin-top: 200px;
+        max-width: 100%;
+        color: #ffff;
+        font-size: 50px;
+    }
+    #Accueil a {
+        position: relative;
+        z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+        color: white;
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+    }
 }
