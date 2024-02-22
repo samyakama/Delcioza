@@ -1,0 +1,130 @@
+body {
+    padding-top: 56px;
+    background-color: #6C431F;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: center;
+}
+
+#logoNavItem:hover img {
+    content: url('Image/Logo-Appuie.png'); /* Remplacez 'NouveauLogo.png' par le chemin de votre nouvelle image */
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px 50px 5px 50px; /* Réduisez la marge selon vos besoins */
+}
+
+.navbar-nav .nav-item a.nav-link {
+    color: #6C431F;
+    text-decoration: none; /* Pour enlever le soulignement du lien */
+}
+
+.navbar-nav .nav-item:hover a.nav-link {
+    color: #CDA577;
+}
+
+@media (max-width: 1200px) {
+    .nav-item {
+        margin: 5px 15px;
+    }
+
+    #Accueil {
+    height: auto;
+}
+}
+
+
+.bg-chocolate {
+    background-color: #ffff;
+}
+
+#Accueil {
+    position: relative;
+    height: 600px;
+    background: url('Image/BG-Accueil.jpg') center no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px; /* Ajoutez un espacement au besoin */
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Opacité de 0.5 (ajustez selon vos besoins) */
+}
+
+#Accueil h1 {
+    position: relative;
+    z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+    height: 150px;
+    margin-top: 200px;
+    max-width: 100%;
+    color: #ffff;
+}
+
+#Accueil a {
+    position: relative;
+    z-index: 2; /* Placez le texte au-dessus de l'arrière-plan avec opacité */
+    color: white;
+}
+
+.container h1 {
+    border-bottom: 2px solid #fff; /* Ligne blanche de 2 pixels */
+    color: #fff; /* Couleur blanche */
+    font-weight: bold; /* Texte en gras */
+    padding-bottom: 10px; /* Espace sous la ligne */
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+
+.bg-strawberry {
+    background-color: #CF3E25;
+}
+
+.bg-apple {
+    background-color: #93A504;
+}
+
+.bg-banana {
+    background-color: #F2D500;
+}
+
+.btn-chocolate {
+    background-color: #CDA577;
+    color: #6C431F;
+}
+
+.btn-strawberry {
+    background-color: #EAAA89;
+    color: #CF3E25;
+}
+
+.btn-apple {
+    background-color: #DBDDA1;
+    color: #93A504;
+}
+
+.btn-banana {
+    background-color: #F4EABB;
+    color: #F2D500;
+}
+
+.bg-custom {
+    background-color: #CDA577;
+}
+
+.white-text {
+    color: #fff; /* Couleur blanche */
+}
