@@ -133,6 +133,38 @@ body {
     color: #fff; /* Couleur blanche */
 }
 
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #6C431F; /* Couleur souhaitée lorsque la souris passe dessus */
+}
+
+#Réseaux {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+    padding: 0; /* Supprimer le rembourrage par défaut de la liste */
+    list-style: none; /* Supprimer les puces de la liste */
+}
+
+.link-facebook img {
+    height: 30px;
+}
+
+#Réseaux .link-facebook:hover img {
+    content: url('Image/FACEBOOK-MARRON.png'); /* Remplacez 'NouveauLogo.png' par le chemin de votre nouvelle image */
+}
+
+.link-instagram img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+#Réseaux .link-instagram:hover img {
+    content: url('Image/INSTAGRAM-MARRON.png'); /* Remplacez 'NouveauLogo.png' par le chemin de votre nouvelle image */
+}
+
 @media (min-width: 100px) {
     #logoNavItem img {
         height: 80px;
